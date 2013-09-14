@@ -1,10 +1,10 @@
 #include <cstring>
-#include "windowsx.h"
+#include <windowsx.h>
 #include "resource.h"
 #include "CEditDialog.h"
 #include "CTh11Replay.h"
-#include "smart_array.h"
-#include "sueLib_LE.h"
+#include "..\rpi_threplay\smart_array.h"
+#include "..\rpi_threplay\sueLib_LE.h"
 
 CEditDialog::CEditDialog(LPCTSTR lpszFilename, int nMaxTextSize)
 	: lpszFilename(lpszFilename), nMaxTextSize(nMaxTextSize)

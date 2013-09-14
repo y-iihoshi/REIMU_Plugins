@@ -1,7 +1,6 @@
 #pragma once
 
-#include <memory>
-#include "IReplay.h"
+#include "..\rpi_threplay\IReplay.h"
 
 #define USER_DATA_TYPE_INFO		0
 #define USER_DATA_TYPE_COMMENT	1

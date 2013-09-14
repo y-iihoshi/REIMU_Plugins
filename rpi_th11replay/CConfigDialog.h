@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Windows.h>
-#include "CDialogBase.h"
+#include "..\rpi_threplay\CDialogBase.h"
 #include "CTh11Config.h"
 
 class CConfigDialog : public CDialogBase

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Windows.h>
-#include "CDialogBase.h"
+#include "..\rpi_threplay\CDialogBase.h"
 
 INT_PTR OpenEditDialog(HINSTANCE hInstance, HWND hWndParent, LPCTSTR lpszFilename);
 

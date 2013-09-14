@@ -33,16 +33,16 @@
     <ClCompile Include="CEditDialog.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="CDialogBase.cpp">
+    <ClCompile Include="..\rpi_threplay\CDialogBase.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="IConfig.cpp">
+    <ClCompile Include="..\rpi_threplay\IConfig.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="IReplay.cpp">
+    <ClCompile Include="..\rpi_threplay\IReplay.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="sueLib_LE.cpp">
+    <ClCompile Include="..\rpi_threplay\sueLib_LE.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,19 +68,19 @@
     <ClInclude Include="CEditDialog.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="CDialogBase.h">
+    <ClInclude Include="..\rpi_threplay\CDialogBase.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="IConfig.h">
+    <ClInclude Include="..\rpi_threplay\IConfig.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="IReplay.h">
+    <ClInclude Include="..\rpi_threplay\IReplay.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="smart_array.h">
+    <ClInclude Include="..\rpi_threplay\smart_array.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="sueLib_LE.h">
+    <ClInclude Include="..\rpi_threplay\sueLib_LE.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

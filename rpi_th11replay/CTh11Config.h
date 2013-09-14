@@ -1,6 +1,6 @@
 #pragma once
 
-#include "IConfig.h"
+#include "..\rpi_threplay\IConfig.h"
 
 class CTh11Config : public IConfig
 {

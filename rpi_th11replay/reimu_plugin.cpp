@@ -1,6 +1,6 @@
 // ƒvƒ‰ƒOƒCƒ“‚²‚Æ‚Ì‚«‚Ü‚è‚«‚Á‚½ˆ—‚ğ‚·‚é•”•ª(Rev.2)
 #include "reimu_plugin.h"
-#include "sueLib_LE.h"
+#include "..\rpi_threplay\sueLib_LE.h"
 #include "rpi_th11replay.h"
 
 

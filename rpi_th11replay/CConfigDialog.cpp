@@ -1,5 +1,5 @@
 #include <cstring>
-#include "windowsx.h"
+#include <windowsx.h>
 #include "resource.h"
 #include "CConfigDialog.h"
 #include "CTh11Config.h"

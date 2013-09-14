@@ -1,8 +1,8 @@
 #include <regex>
 #include <cstring>
 #include "CTh11Replay.h"
-#include "smart_array.h"
-#include "sueLib_LE.h"
+#include "..\rpi_threplay\smart_array.h"
+#include "..\rpi_threplay\sueLib_LE.h"
 
 CTh11Replay::Info::Info(const char *pSrc, size_t nSize)
 	: pData(new char[nSize])

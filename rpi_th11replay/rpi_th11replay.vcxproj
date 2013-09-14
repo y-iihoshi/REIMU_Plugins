@@ -86,30 +86,30 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\rpi_threplay\CDialogBase.cpp" />
+    <ClCompile Include="..\rpi_threplay\IConfig.cpp" />
+    <ClCompile Include="..\rpi_threplay\IReplay.cpp" />
+    <ClCompile Include="..\rpi_threplay\sueLib_LE.cpp" />
     <ClCompile Include="CConfigDialog.cpp" />
-    <ClCompile Include="CDialogBase.cpp" />
     <ClCompile Include="CEditDialog.cpp" />
     <ClCompile Include="CTh11Replay.cpp" />
-    <ClCompile Include="IConfig.cpp" />
-    <ClCompile Include="IReplay.cpp" />
     <ClCompile Include="reimu_plugin.cpp" />
     <ClCompile Include="rpi_th11replay.cpp" />
     <ClCompile Include="CTh11Config.cpp" />
-    <ClCompile Include="sueLib_LE.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\rpi_threplay\CDialogBase.h" />
+    <ClInclude Include="..\rpi_threplay\IConfig.h" />
+    <ClInclude Include="..\rpi_threplay\IReplay.h" />
+    <ClInclude Include="..\rpi_threplay\smart_array.h" />
+    <ClInclude Include="..\rpi_threplay\sueLib_LE.h" />
     <ClInclude Include="CTh11Config.h" />
-    <ClInclude Include="CDialogBase.h" />
     <ClInclude Include="CEditDialog.h" />
     <ClInclude Include="CTh11Replay.h" />
     <ClInclude Include="CConfigDialog.h" />
-    <ClInclude Include="IConfig.h" />
-    <ClInclude Include="IReplay.h" />
     <ClInclude Include="reimu_plugin.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="rpi_th11replay.h" />
-    <ClInclude Include="smart_array.h" />
-    <ClInclude Include="sueLib_LE.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="exports.def" />

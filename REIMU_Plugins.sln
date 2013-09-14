@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpi_bitmap", "rpi_bitmap\rp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpi_th11replay", "rpi_th11replay\rpi_th11replay.vcxproj", "{CBBA031E-DAE0-4C59-9F28-132388205394}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpi_th12replay", "rpi_th12replay\rpi_th12replay.vcxproj", "{1743C6D9-33D2-4503-9DF6-238305128E0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -32,6 +34,12 @@ Global
 		{CBBA031E-DAE0-4C59-9F28-132388205394}.Release|Win32.Build.0 = Release|Win32
 		{CBBA031E-DAE0-4C59-9F28-132388205394}.Template|Win32.ActiveCfg = Release|Win32
 		{CBBA031E-DAE0-4C59-9F28-132388205394}.Template|Win32.Build.0 = Release|Win32
+		{1743C6D9-33D2-4503-9DF6-238305128E0D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1743C6D9-33D2-4503-9DF6-238305128E0D}.Debug|Win32.Build.0 = Debug|Win32
+		{1743C6D9-33D2-4503-9DF6-238305128E0D}.Release|Win32.ActiveCfg = Release|Win32
+		{1743C6D9-33D2-4503-9DF6-238305128E0D}.Release|Win32.Build.0 = Release|Win32
+		{1743C6D9-33D2-4503-9DF6-238305128E0D}.Template|Win32.ActiveCfg = Release|Win32
+		{1743C6D9-33D2-4503-9DF6-238305128E0D}.Template|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

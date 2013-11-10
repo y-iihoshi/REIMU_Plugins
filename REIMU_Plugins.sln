@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpi_th12replay", "rpi_th12r
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpi_th125replay", "rpi_th125replay\rpi_th125replay.vcxproj", "{D944AD0B-E411-4879-A9FE-CA30E0F8229E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rpi_th125bestshot", "rpi_th125bestshot\rpi_th125bestshot.vcxproj", "{4BCE0AE8-21A9-4B3C-9C4F-35055FFE715C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -48,6 +50,12 @@ Global
 		{D944AD0B-E411-4879-A9FE-CA30E0F8229E}.Release|Win32.Build.0 = Release|Win32
 		{D944AD0B-E411-4879-A9FE-CA30E0F8229E}.Template|Win32.ActiveCfg = Release|Win32
 		{D944AD0B-E411-4879-A9FE-CA30E0F8229E}.Template|Win32.Build.0 = Release|Win32
+		{4BCE0AE8-21A9-4B3C-9C4F-35055FFE715C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4BCE0AE8-21A9-4B3C-9C4F-35055FFE715C}.Debug|Win32.Build.0 = Debug|Win32
+		{4BCE0AE8-21A9-4B3C-9C4F-35055FFE715C}.Release|Win32.ActiveCfg = Release|Win32
+		{4BCE0AE8-21A9-4B3C-9C4F-35055FFE715C}.Release|Win32.Build.0 = Release|Win32
+		{4BCE0AE8-21A9-4B3C-9C4F-35055FFE715C}.Template|Win32.ActiveCfg = Release|Win32
+		{4BCE0AE8-21A9-4B3C-9C4F-35055FFE715C}.Template|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,6 +36,7 @@
 
 * th12replay.rpi: 東方星蓮船 ver. 1.00b
 * th125replay.rpi: ダブルスポイラー ver. 1.00a
+* th125bestshot.rpi: ダブルスポイラー ver. 1.00a
 
 ### 対応予定あり {: #WillSupport }
 
@@ -154,6 +155,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 Ver. 20131110
 
 * ダブルスポイラーに対応
+	* th125replay.rpi: リプレイファイル用
+	* th125bestshot.rpi: ベストショットファイル用
 
 Ver. 20130929\_2
 

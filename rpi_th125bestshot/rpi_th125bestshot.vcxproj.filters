@@ -21,19 +21,7 @@
     <ClInclude Include="reimu_plugin.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="rpi_th125bestshot.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="..\rpi_threplay\CDialogBase.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="..\rpi_threplay\IConfig.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="..\rpi_threplay\IReplay.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="..\rpi_threplay\smart_array.h">
@@ -60,15 +48,6 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="rpi_th125bestshot.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\rpi_threplay\CDialogBase.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\rpi_threplay\IConfig.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\rpi_threplay\IReplay.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="..\rpi_threplay\sueLib_LE.cpp">

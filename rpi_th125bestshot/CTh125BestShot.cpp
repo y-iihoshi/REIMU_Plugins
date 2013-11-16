@@ -77,7 +77,7 @@ int CTh125BestShot::GetInfo(const char *pSrc, size_t nSrcSize, char **ppDst, siz
 
 	CTh125BestShot::Info info(pSrc, nSrcSize);
 
-	*ppDst = (char *)LocalAlloc(LPTR, 1024);
+	*ppDst = (char *)::LocalAlloc(LPTR, 1024);
 	if (*ppDst == NULL)
 		return RET_ERR_NOMEM;
 
@@ -152,10 +152,10 @@ int CTh125BestShot::GetPicture(const char *pSrc, size_t nSrcSize, char **ppDst, 
 	CTh125BestShot::Info info(pSrc, nSrcSize);
 
 	size_t nDstSize = 4 * info.width * info.height;
-	*ppDst = (char *)LocalAlloc(LPTR, nDstSize);
+	*ppDst = (char *)::LocalAlloc(LPTR, nDstSize);
 	if (*ppDst == NULL)
 		return RET_ERR_NOMEM;
-	*ppInfo = (BITMAPINFO *)LocalAlloc(LPTR, sizeof(BITMAPINFO));
+	*ppInfo = (BITMAPINFO *)::LocalAlloc(LPTR, sizeof(BITMAPINFO));
 	if (*ppInfo == NULL)
 	{
 		LocalFree(*ppDst);

@@ -66,21 +66,24 @@ static const ColumnInfo Column[MAX_COLUMN + 1] = {
 ////////////////////////
 #define MAX_INFO	4		// 最大情報数(2+2*n)
 
+static const char* szPluginInfo[MAX_INFO] = {
+	"REIMU Plug-in For 東方星蓮船 Ver1.00 (C) IIHOSHI Yoshinori, 2013",
+	"東方星蓮船",
+	"th12_*.rpy",
+	"東方星蓮船 リプレイファイル(th12_*.rpy)"
+};
+
 // プラグインの情報を取得する
 unsigned int GetPluginInfoEx(int nInfoNo, char* szDst, unsigned int dwDstLength)
 {
-	const char* szInfo[MAX_INFO] = {
-		"REIMU Plug-in For 東方星蓮船 Ver1.00 (C) IIHOSHI Yoshinori, 2013",
-		"東方星蓮船",
-		"th12_*.rpy",
-		"東方星蓮船 リプレイファイル(th12_*.rpy)"
-	};
-
 	if ((0 <= nInfoNo) && (nInfoNo < MAX_INFO))
 	{
-		if (szDst != NULL)
-			::strcpy_s(szDst, dwDstLength, szInfo[nInfoNo]);
-		return std::strlen(szInfo[nInfoNo]);
+		size_t length = std::strlen(szPluginInfo[nInfoNo]);
+		if (szDst == NULL)
+			return length;
+		else
+			if (dwDstLength > length)
+				return (::strcpy_s(szDst, dwDstLength, szPluginInfo[nInfoNo]) == 0) ? length : 0;
 	}
 
 	return 0;
@@ -94,13 +97,11 @@ int GetColumnInfoEx(ColumnInfo** lpInfo)
 
 	size_t size = sizeof(ColumnInfo) * (MAX_COLUMN + 1);
 
-	*lpInfo = (ColumnInfo *)LocalAlloc(LPTR, size);
+	*lpInfo = (ColumnInfo *)::LocalAlloc(LPTR, size);
 	if (*lpInfo == NULL)
 		return RPI_NO_MEMORY;
 
-	::memcpy_s(*lpInfo, size, Column, size);
-
-	return RPI_ALL_RIGHT;
+	return (::memcpy_s(*lpInfo, size, Column, size) == 0) ? RPI_ALL_RIGHT : RPI_UNKNOWN_ERROR;
 }
 
 // 対応しているかどうか(対応していれば非0を返す)
@@ -121,7 +122,7 @@ int GetFileInfoListEx(const char* pSrc, unsigned int dwSize, FileInfo** lpInfo, 
 	if (!replay.IsSupported(pSrc, dwSize))
 		return RPI_NOT_SUPPORT;
 
-	*lpInfo = (FileInfo *)LocalAlloc(LPTR, sizeof(FileInfo) * MAX_COLUMN);
+	*lpInfo = (FileInfo *)::LocalAlloc(LPTR, sizeof(FileInfo) * MAX_COLUMN);
 	if (*lpInfo == NULL)
 		return RPI_NO_MEMORY;
 
@@ -204,7 +205,7 @@ int GetFileInfoTextEx(int nType, const char* pSrc, unsigned int dwSize, char** p
 	switch (retval)
 	{
 	case RET_OK:
-		*pDst = (char *)LocalAlloc(LPTR, nDstSize);
+		*pDst = (char *)::LocalAlloc(LPTR, nDstSize);
 		if (*pDst == NULL)
 			return RPI_NO_MEMORY;
 		::memcpy_s(*pDst, nDstSize, pConstDst, nDstSize);

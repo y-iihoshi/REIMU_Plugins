@@ -85,24 +85,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\rpi_threplay\BitReader.h" />
-    <ClInclude Include="..\rpi_threplay\CDialogBase.h" />
-    <ClInclude Include="..\rpi_threplay\IConfig.h" />
     <ClInclude Include="..\rpi_threplay\IImage.h" />
-    <ClInclude Include="..\rpi_threplay\IReplay.h" />
     <ClInclude Include="..\rpi_threplay\Lzss.h" />
     <ClInclude Include="..\rpi_threplay\smart_array.h" />
     <ClInclude Include="..\rpi_threplay\sueLib_LE.h" />
     <ClInclude Include="CTh125BestShot.h" />
     <ClInclude Include="reimu_plugin.h" />
-    <ClInclude Include="resource.h" />
     <ClInclude Include="rpi_th125bestshot.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\rpi_threplay\BitReader.cpp" />
-    <ClCompile Include="..\rpi_threplay\CDialogBase.cpp" />
-    <ClCompile Include="..\rpi_threplay\IConfig.cpp" />
     <ClCompile Include="..\rpi_threplay\IImage.cpp" />
-    <ClCompile Include="..\rpi_threplay\IReplay.cpp" />
     <ClCompile Include="..\rpi_threplay\Lzss.cpp" />
     <ClCompile Include="..\rpi_threplay\sueLib_LE.cpp" />
     <ClCompile Include="CTh125BestShot.cpp" />

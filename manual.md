@@ -34,6 +34,7 @@
 
 対応している東方 Project の作品名・バージョン：
 
+* th095bestshot.rpi: 東方文花帖 ver. 1.02a
 * th12replay.rpi: 東方星蓮船 ver. 1.00b
 * th125replay.rpi: ダブルスポイラー ver. 1.00a
 * th125bestshot.rpi: ダブルスポイラー ver. 1.00a
@@ -85,9 +86,9 @@
 * Windows 8 (64bit)　※ th12replay.rpi のみ
 * Windows 8.1 (64bit)
 
-本プラグイン導入後の REIMU 起動時に「msvcr110.dll がない」といったメッセージが表示される場合、下記をインストールしてください。
+本プラグイン導入後の REIMU 起動時に「msvcr110.dll がない」といったメッセージが表示される場合、下記 URL から **x86 版** をインストールしてください。
 
-* [Visual Studio 2012 更新プログラム 3 の Visual C++ 再頒布可能パッケージ][Runtime]
+* [Visual Studio 2012 更新プログラム 4 の Visual C++ 再頒布可能パッケージ][Runtime]
 
   [Runtime]: http://www.microsoft.com/ja-jp/download/details.aspx?id=30679
 
@@ -151,6 +152,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 ----------------------------------------
 
 ## ChangeLog {: #ChangeLog }
+
+Ver. 20131116
+
+* 東方文花帖に対応
+	* th095bestshot.rpi: ベストショットファイル用
 
 Ver. 20131110
 

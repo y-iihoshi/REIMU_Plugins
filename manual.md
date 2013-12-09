@@ -38,12 +38,12 @@
 * th12replay.rpi: 東方星蓮船 ver. 1.00b
 * th125replay.rpi: ダブルスポイラー ver. 1.00a
 * th125bestshot.rpi: ダブルスポイラー ver. 1.00a
+* th128replay.rpi: 妖精大戦争 ver. 1.00a
 
 ### 対応予定あり {: #WillSupport }
 
 以下作品については、本プラグイン作者の原作プレイ進捗状況に伴って今後対応予定です：
 
-* 妖精大戦争
 * 東方神霊廟
 * 東方輝針城
 
@@ -152,6 +152,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 ----------------------------------------
 
 ## ChangeLog {: #ChangeLog }
+
+Ver. 20131210
+
+* 妖精大戦争に対応
 
 Ver. 20131116
 

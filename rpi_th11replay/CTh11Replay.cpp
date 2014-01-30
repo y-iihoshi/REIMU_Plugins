@@ -143,7 +143,7 @@ int CTh11Replay::WriteComment(const char *pFilename, const char *pSrc, size_t nS
 		return RET_ERR_WRITE;
 	}
 	wroteCount = std::fwrite(pSrc, sizeof(char), nSrcSize, fp);
-	if (wroteCount != user2Header.nSize)
+	if (wroteCount != nSrcSize)
 	{
 		std::fclose(fp);
 		return RET_ERR_WRITE;

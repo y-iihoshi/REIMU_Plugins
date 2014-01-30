@@ -3,6 +3,10 @@
 #include "CTh13Replay.h"
 #include "..\rpi_threplay\smart_array.h"
 #include "..\rpi_threplay\sueLib_LE.h"
+#if 0
+#include "..\rpi_threplay\ThCrypt.h"
+#include "..\rpi_threplay\Lzss.h"
+#endif
 
 CTh13Replay::Info::Info(const char *pSrc, size_t nSize)
 	: pData(new char[nSize])
@@ -208,6 +212,55 @@ int CTh13Replay::GetUserData(int nType, const char *pSrc, size_t nSize, const ch
 
 	*ppDst = pSrc + userOffset + userHeaderSize;
 	*pDstSize = userHeader.nSize - userHeaderSize;
+
+#if 0
+	{
+		size_t encodedSize;
+		size_t decodedSize;
+
+		::memcpy_s(&encodedSize, sizeof(size_t), pSrc + 0x1C, sizeof(size_t));
+		::memcpy_s(&decodedSize, sizeof(size_t), pSrc + 0x20, sizeof(size_t));
+
+		char *encodedData = new char[encodedSize];
+		::memcpy_s(encodedData, encodedSize, pSrc + 0x24, encodedSize);
+
+		char *decryptedData = new char[encodedSize];
+		ThCrypt::Decrypt(encodedData, encodedSize, decryptedData, encodedSize,
+			encodedSize, 0x5C, 0xE1, 0x0400, encodedSize);
+		ThCrypt::Decrypt(decryptedData, encodedSize, encodedData, encodedSize,
+			encodedSize, 0x7D, 0x3A, 0x0100, encodedSize);
+
+		char *decodedData = new char[decodedSize];
+		Lzss::Extract(encodedData, encodedSize, decodedData, decodedSize);
+
+		/*
+			0x0000: Name (10Byte)
+			0x000A: Replay type (2Byte)  0: Stages, 1: One stage, 2: Spell practice
+			0x000C: Play time (4Byte)
+			0x0010: always 0? (4Byte)
+			0x0014: Score/10 (4Byte)
+			0x0058: Num of stages? (4Byte)
+			0x005C: Chara (0-origin) (4Byte)
+			0x0064: Level (0-origin) (4Byte)
+			0x0068: StageProgress? (1-origin) (4Byte)  1-6: Stage1-6, 7: Extra, 8: Clear ?
+			0x006C: always 0? (4Byte)
+			0x0070: SpellCardNo. (0-origin) or 0xFFFFFFFF (4Byte)
+			0x0074: Stage? (1-origin) (2Byte)
+			0x0088: Chara? (0-origin) (4Byte?)
+			0x0094: Level? (0-origin) (4Byte?)
+			0x00A4: SpellCardNo. (0-origin) or 0xFFFFFFFF (4Byte)
+			0x00E8: Replay data?
+		*/
+
+		FILE *fp2 = NULL;
+		errno_t err = ::fopen_s(&fp2, "decoded.dat", "wb");
+		if ((err != 0) || (fp2 == NULL))
+			return RET_ERR_READ;
+		std::fwrite(decodedData, sizeof(char), decodedSize, fp2);
+		std::fflush(fp2);
+		std::fclose(fp2);
+	}
+#endif
 
 	return RET_OK;
 }

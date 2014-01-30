@@ -94,7 +94,7 @@ bool CBmp::GetPicture(const char* pSrc, DWORD dwSize, char** pDst, BITMAPINFO** 
 		{
 			RGBQUAD		*p1, *p2;
 			p1 = (RGBQUAD*)(pSrc+sizeof(BITMAPFILEHEADER)+sizeof(BITMAPINFOHEADER));	// 入力
-			p2 = (RGBQUAD*)((char*)*pInfo+sizeof(BITMAPINFOHEADER));							// 出力
+			p2 = (RGBQUAD*)((char*)*pInfo+sizeof(BITMAPINFOHEADER));					// 出力
 			for(i = 0; i < (int)dwPalNum; i++){
 				memcpy(p2++, p1++, sizeof(RGBQUAD));
 			}
@@ -105,7 +105,7 @@ bool CBmp::GetPicture(const char* pSrc, DWORD dwSize, char** pDst, BITMAPINFO** 
 			RGBTRIPLE	*p1;
 			RGBQUAD		*p2;
 			p1 = (RGBTRIPLE*)(pSrc+sizeof(BITMAPFILEHEADER)+sizeof(BITMAPCOREHEADER));	// 入力
-			p2 = (RGBQUAD*)(*pInfo+sizeof(BITMAPINFOHEADER));							// 出力
+			p2 = (RGBQUAD*)((char*)*pInfo+sizeof(BITMAPINFOHEADER));					// 出力
 			for(i = 0; i < (int)dwPalNum; i++){
 				memcpy(p2++, p1++, sizeof(RGBTRIPLE));
 			}

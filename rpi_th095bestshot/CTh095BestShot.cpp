@@ -31,7 +31,7 @@ bool CTh095BestShot::IsSupported(const char *pSrc, size_t nSize)
 
 int CTh095BestShot::GetInfo(const char *pSrc, size_t nSrcSize, char **ppDst, size_t *pnDstSize)
 {
-	if ((pSrc == NULL) || (ppDst == NULL) && (pnDstSize == NULL))
+	if ((pSrc == NULL) || (ppDst == NULL) || (pnDstSize == NULL))
 		return RET_ERR_PARAM;
 
 	if (!this->IsSupported(pSrc, nSrcSize))

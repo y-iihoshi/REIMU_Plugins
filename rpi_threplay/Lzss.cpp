@@ -1,3 +1,4 @@
+#include <cstring>
 #include "Lzss.h"
 #include "BitReader.h"
 
@@ -7,6 +8,8 @@ void Lzss::Extract(const char *pSrc, size_t nSrcSize, char *pDst, size_t nDstSiz
 	unsigned char dictionary[DicSize];
 	int dicIndex = 1;
 	size_t dstIndex = 0;
+
+	std::memset(dictionary, 0, sizeof(dictionary));
 
 	while (dicIndex < DicSize)
 	{

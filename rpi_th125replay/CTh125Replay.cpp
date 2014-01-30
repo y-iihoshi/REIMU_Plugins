@@ -70,8 +70,8 @@ int CTh125Replay::GetInfo(const char *pSrc, size_t nSrcSize, const char **ppDst,
 
 CTh125Replay::Info *CTh125Replay::GetInfo(const char *pSrc, size_t nSrcSize)
 {
-	const char *pDest;
-	size_t nDestSize;
+	const char *pDest = NULL;
+	size_t nDestSize = 0;
 
 	return (this->GetInfo(pSrc, nSrcSize, &pDest, &nDestSize) == RET_OK)
 		? new CTh125Replay::Info(pDest, nDestSize) : NULL;
@@ -97,9 +97,9 @@ int CTh125Replay::WriteComment(const char *pFilename, const char *pSrc, size_t n
 	if (!this->IsSupported(buf.GetPtr(), buf.GetSize()))
 		return RET_ERR_READ;
 
-	FILE *fp;
+	FILE *fp = NULL;
 	errno_t retval = ::fopen_s(&fp, pFilename, "wb");
-	if (retval != 0)
+	if ((retval != 0) || (fp == NULL))
 		return RET_ERR_WRITE;
 
 	unsigned int user1Offset, user2Offset;

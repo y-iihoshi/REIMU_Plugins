@@ -58,7 +58,7 @@ static const ColumnInfo Column[MAX_COLUMN + 1] = {
 #define MAX_INFO	4		// 最大情報数(2+2*n)
 
 static const char* szPluginInfo[MAX_INFO] = {
-	"REIMU Plug-in For 東方文花帖 ベストショット Ver1.00 (C) IIHOSHI Yoshinori, 2013",
+	"REIMU Plug-in For 東方文花帖 ベストショット Ver1.01 (C) IIHOSHI Yoshinori, 2013-2014",
 	"東方文花帖 ベストショット",
 	"bs_*.dat",
 	"東方文花帖 ベストショットファイル(bs_*.dat)"

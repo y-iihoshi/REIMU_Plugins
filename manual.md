@@ -39,12 +39,12 @@
 * th125replay.rpi: ダブルスポイラー ver. 1.00a
 * th125bestshot.rpi: ダブルスポイラー ver. 1.00a
 * th128replay.rpi: 妖精大戦争 ver. 1.00a
+* th13replay.rpi: 東方神霊廟 ver. 1.00c
 
 ### 対応予定あり {: #WillSupport }
 
 以下作品については、本プラグイン作者の原作プレイ進捗状況に伴って今後対応予定です：
 
-* 東方神霊廟
 * 東方輝針城
 
 以下作品についても上記と同様ですが、本プラグイン作者は格ゲーが弾幕 STG 以上に下手なので、後回しです：
@@ -77,7 +77,8 @@
 
 ### ビルド環境 {: #BuiltEnv }
 
-* Windows 7 Professional SP1 (64bit) + Visual Studio Express 2012
+* Windows 7 Professional SP1 (64bit)
+* Visual Studio Express 2012 for Windows Desktop Update 4
 
 ### 動作確認済み環境 {: #TestedEnv }
 
@@ -138,7 +139,7 @@ REIMU 本体の設定ファイル (reimu.ini) 内の `RecentDir1` を手動で�
 
 ## License {: #License }
 
-Copyright (c) 2013, IIHOSHI Yoshinori  
+Copyright (c) 2013-2014, IIHOSHI Yoshinori  
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -152,6 +153,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 ----------------------------------------
 
 ## ChangeLog {: #ChangeLog }
+
+Ver. 20140131
+
+* 東方神霊廟に対応
+* 全体的にソースコードを整理
 
 Ver. 20131210
 

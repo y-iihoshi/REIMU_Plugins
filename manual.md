@@ -40,14 +40,11 @@
 * th125bestshot.rpi: ダブルスポイラー ver. 1.00a
 * th128replay.rpi: 妖精大戦争 ver. 1.00a
 * th13replay.rpi: 東方神霊廟 ver. 1.00c
+* th14replay.rpi: 東方輝針城 ver. 1.00b
 
 ### 対応予定あり {: #WillSupport }
 
 以下作品については、本プラグイン作者の原作プレイ進捗状況に伴って今後対応予定です：
-
-* 東方輝針城
-
-以下作品についても上記と同様ですが、本プラグイン作者は格ゲーが弾幕 STG 以上に下手なので、後回しです：
 
 * 東方緋想天
 * 東方非想天則
@@ -153,6 +150,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 ----------------------------------------
 
 ## ChangeLog {: #ChangeLog }
+
+Ver. 20140302
+
+* 東方輝針城に対応
 
 Ver. 20140131
 

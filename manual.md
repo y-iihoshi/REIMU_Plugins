@@ -41,6 +41,8 @@
 * th128replay.rpi: 妖精大戦争 ver. 1.00a
 * th13replay.rpi: 東方神霊廟 ver. 1.00c
 * th14replay.rpi: 東方輝針城 ver. 1.00b
+* th143replay.rpi: 弾幕アマノジャク ver. 1.00a
+* th143screenshot.rpi: 弾幕アマノジャク ver. 1.00a
 
 ### 対応予定あり {: #WillSupport }
 
@@ -79,9 +81,9 @@
 
 ### 動作確認済み環境 {: #TestedEnv }
 
-* Windows XP Home Edition SP3 (32bit)
+* Windows XP Home Edition SP3 (32bit) （Ver. 20140302 まで確認済み）
 * Windows 7 Professional SP1 (64bit)
-* Windows 8 (64bit)　※ th12replay.rpi のみ
+* Windows 8 (64bit) （th12replay.rpi のみ確認済み）
 * Windows 8.1 (64bit)
 
 本プラグイン導入後の REIMU 起動時に「msvcr110.dll がない」といったメッセージが表示される場合、下記 URL から **x86 版** をインストールしてください。
@@ -123,11 +125,12 @@ REIMU 本体の設定ファイル (reimu.ini) 内の `RecentDir1` を手動で�
 ## Copyrights {: #Copyrights }
 
 * 東方 Project の各作品の著作権は[上海アリス幻樂団][ZUN]様にあります。本プラグイン作者とは一切関係がありません。
+* 東方萃夢想、東方緋想天、東方非想天則、東方心綺楼の著作権は[黄昏フロンティア][tasofro]様及び[上海アリス幻樂団][ZUN]様にあります。本プラグイン作者とは一切関係がありません。
 * REIMU の著作権は [sue445][sue445] 様にあります。本プラグイン作者とは一切関係がありません。
 * 本プラグインの著作権は IIHOSHI Yoshinori ([Web site][MyWeb], [Twitter][MyTwitter]) にあります。
 
   [ZUN]: http://www16.big.or.jp/~zun/ "上海アリス幻樂団"
-  [TasoFro]: http://www.tasofro.net/ "黄昏フロンティア"
+  [tasofro]: http://www.tasofro.net "Twilight-Frontier"
   [sue445]: http://www.sue445.net/ "sue445.NET"
   [MyWeb]: http://www.colorless-sight.jp "Colorless Sight"
   [MyTwitter]: http://twitter.com/iihoshi
@@ -150,6 +153,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 ----------------------------------------
 
 ## ChangeLog {: #ChangeLog }
+
+Ver. 20140610
+
+* 弾幕アマノジャクに対応
+	* th143replay.rpi: リプレイファイル用
+	* th143screenshot.rpi: スクリーンショットファイル用
 
 Ver. 20140302
 

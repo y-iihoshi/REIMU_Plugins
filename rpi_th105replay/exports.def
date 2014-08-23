@@ -1,0 +1,12 @@
+EXPORTS
+	GetPluginRevision
+	GetPluginInfo
+	GetColumnInfo
+	IsSupported
+	GetFileInfoList
+	GetFileInfoText1
+	GetFileInfoText2
+;	GetFileInfoImage1
+;	GetFileInfoImage2
+;	EditDialog
+;	ConfigDialog

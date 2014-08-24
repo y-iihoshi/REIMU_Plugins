@@ -35,7 +35,9 @@
 対応している東方 Project の作品名・バージョン：
 
 * th095bestshot.rpi: 東方文花帖 ver. 1.02a
+* th105replay.rpi: 東方緋想天 ver. 1.06a
 * th12replay.rpi: 東方星蓮船 ver. 1.00b
+* th123replay.rpi: 東方非想天則 ver. 1.10a
 * th125replay.rpi: ダブルスポイラー ver. 1.00a
 * th125bestshot.rpi: ダブルスポイラー ver. 1.00a
 * th128replay.rpi: 妖精大戦争 ver. 1.00a
@@ -48,8 +50,6 @@
 
 以下作品については、本プラグイン作者の原作プレイ進捗状況に伴って今後対応予定です：
 
-* 東方緋想天
-* 東方非想天則
 * 東方心綺楼
 
 ### 対応予定無し {: #NotSupported }
@@ -153,6 +153,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 ----------------------------------------
 
 ## ChangeLog {: #ChangeLog }
+
+Ver. 20140824
+
+* 東方緋想天に対応
+* 東方非想天則に対応
 
 Ver. 20140610
 
